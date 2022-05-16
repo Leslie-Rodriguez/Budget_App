@@ -8,10 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PlannedIncomeModule = void 0;
 const common_1 = require("@nestjs/common");
+const planned_income_service_1 = require("./planned_income.service");
 let PlannedIncomeModule = class PlannedIncomeModule {
 };
 PlannedIncomeModule = __decorate([
-    (0, common_1.Module)({})
+    (0, common_1.Module)({
+        providers: [planned_income_service_1.PlannedIncomeService]
+    })
 ], PlannedIncomeModule);
 exports.PlannedIncomeModule = PlannedIncomeModule;
 //# sourceMappingURL=planned_income.module.js.map

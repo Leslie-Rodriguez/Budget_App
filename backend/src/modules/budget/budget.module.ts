@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { BudgetService } from './budget.service';
 
-@Module({})
+@Module({
+  providers: [BudgetService]
+})
 export class BudgetModule {}
