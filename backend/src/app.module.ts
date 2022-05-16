@@ -19,10 +19,10 @@ import { RealIncomeController } from './modules/real_income/real_income.controll
 import { RealExpenseController } from './modules/real_expense/real_expense.controller';
 
 @Module({
-  imports: [/*ConfigModule.forRoot({
-    envFilePath: `${process.cwd()}/.env.${process.env.NODE_ENV}`,
+  imports: [ConfigModule.forRoot(),
+    /*envFilePath: `${process.cwd()}/.env.${process.env.NODE_ENV}`,
   }),*/ TypeOrmModule.forRoot(), UserModule, BudgetModule, PlannedIncomeModule, PlannedExpenseModule, RealExpenseModule, RealIncomeModule, CategoryModule],
-  controllers: [AppController, UserController, CategoryController, BudgetController, PlannedExpenseController, PlannedIncomeController, RealIncomeController, RealExpenseController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}

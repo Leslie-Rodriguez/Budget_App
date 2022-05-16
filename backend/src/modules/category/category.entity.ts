@@ -6,7 +6,7 @@ import { Real_Income } from '../real_income/real_income.entity';
 @Entity()
 export class Category {
   @PrimaryGeneratedColumn('uuid')
-  user_id: string;
+  category_id: string;
 
   @Column()
   name: string;

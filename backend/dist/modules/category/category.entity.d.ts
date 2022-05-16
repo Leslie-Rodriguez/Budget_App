@@ -3,7 +3,7 @@ import { Planned_Income } from '../planned_income/planned_income.entity';
 import { Real_Expense } from '../real_expense/real_expense.entity';
 import { Real_Income } from '../real_income/real_income.entity';
 export declare class Category {
-    user_id: string;
+    category_id: string;
     name: string;
     description: string;
     planned_expenses: Planned_Expense[];
